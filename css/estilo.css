@@ -11,7 +11,8 @@ main {
 }
 
 .produto {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #424242;
     padding: 30px;
     margin-bottom: 20px;
@@ -23,8 +24,31 @@ main {
     font-size: 1.5em;
 }
 
-.produto > p {
-    padding-left: 20px;
+.legenda > p {
+    padding-bottom: 20px;
+}
+
+.botaoCarrinho {
+    display: flex;
+    align-items: center;
+    color: black;
+    border: 1px solid #00ff44;
+    outline: 0;
+    padding: 10px;
+    background-color: #00ff44;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.botaoCarrinho:hover {
+    color: white;
+    background-color: #006E1E;
+}
+
+.botaoCarrinho > img {
+    width: 35px;
+    height: 35px;
+    padding-right: 5px;
 }
 
 .imagem {
