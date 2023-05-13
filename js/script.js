@@ -10,13 +10,24 @@ for (let elemento of adicionarProduto) {
   elemento.addEventListener("click", function () {
     let pai = elemento.parentNode;
     let pai2 = pai.parentNode;
-    elementoPai.push(pai2.innerHTML)
+    let imagemElemento = pai2.querySelector(".imagem img");
+    let imagemElementoSrc = imagemElemento.getAttribute("src")
+    let nomeElemento = pai2.querySelector(".nome");
+    let preçoElemento = pai2.querySelector(".preço");
+
+    console.log(imagemElementoSrc);
+    console.log(preçoElemento);
+    console.log(nomeElemento);
+
+    elementoPai.push(pai2.innerHTML);
     produto.push(elemento);
     quantidade++;
     quantidadeProdutos.innerHTML = `${quantidade} Produtos`;
-    console.log(elementoPai);
+    // console.log(pai2);
 
-    localStorage.setItem("produtos", JSON.stringify(elementoPai))
+    localStorage.setItem("nomeElemento", nomeElemento.innerHTML);
+    localStorage.setItem("imagemElemento", imagemElementoSrc);
+    localStorage.setItem("preçoElemento", preçoElemento.innerHTML);
 
     // const divConteudo = document.createElement("div");
     // divConteudo.innerHTML = elementoPai2.innerHTML;
