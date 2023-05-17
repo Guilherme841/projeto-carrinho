@@ -43,9 +43,54 @@ th {
     align-items: center;
 }
 
+.containerQuantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantidade {
+    margin: 0px 10px;
+    font-size: 1.3em;
+}
+
+.menos, .mais {
+    background-color: transparent;
+    border: 0;
+    max-width: 35px;
+    max-height: 35px;
+    padding: 7px;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.mais:hover , .menos:hover {
+    background-color: rgb(122, 122, 122);
+}
+
+.menos > img , .mais > img, .delete > img{
+    width: 100%;
+}
+
+.delete {
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    border-radius: 50%;
+    max-width: 75px;
+    max-height: 75px;
+    transition: .7s;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: rgb(122, 122, 122);
+}
+
 .imagem {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .imagem > img {

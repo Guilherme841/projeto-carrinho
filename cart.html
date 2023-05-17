@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/cart.css">
     <title>Carrinho</title>
 </head>
+
 <body>
     <header>
 
@@ -19,15 +21,23 @@
                 <th>Preço</th>
                 <th></th>
                 <tr>
-                    <td><div class="containerProdutos2">
-                        <div class="imagem"><img src="imagens/caneca.jpg" alt="caneca"></div>
-                        <div class="legenda">
-                            <p class="nome">Caneca</p>
+                    <td>
+                        <div class="containerProdutos2">
+                            <div class="imagem"><img src="imagens/caneca.jpg" alt="caneca"></div>
+                            <div class="legenda">
+                                <p class="nome">Caneca</p>
+                            </div>
                         </div>
-                    </div></td>
-                    <td><button>-</button><span>1</span><button>+</button></td>
+                    </td>
+                    <td>
+                        <div class="containerQuantidade">
+                            <button class="menos"><img src="imagens/menos.png" alt="menos"></button>
+                            <span class="quantidade">1</span><button class="mais"><img src="imagens/mais.png"
+                                    alt="mais"></button>
+                        </div>
+                    </td>
                     <td>31,90</td>
-                    <td><button>Delete</button></td>
+                    <td><button class="delete"><img src="imagens/delete.png" alt="delete"></button></td>
                 </tr>
             </table>
         </div>
@@ -44,4 +54,5 @@
     </footer>
     <script src="js/cart.js"></script>
 </body>
+
 </html>
