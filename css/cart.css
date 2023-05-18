@@ -33,36 +33,34 @@ td {
     outline: 1px solid rgb(126, 126, 126);
 }
 
-.containerQuantidadeDelete {
+#containerQuantidadeDelete {
     display: flex;
     align-items: center;
     padding-top: 10px;
 }
 
-.containerImagemNome {}
-
-.containerNomePreço {
+#containerNomePreço {
     width: 100%;
     font-size: 1.3em;
     padding: 10px 30px;
     text-align: center;
 }
 
-.containerNomePreço>p:nth-child(1) {
+#containerNomePreço>p:nth-child(1) {
     padding-bottom: 15px;
 }
 
-.imagem {
+#imagem {
     width: 120px;
     height: 120px;
 }
 
-.imagem>img {
+#imagem>img {
     width: 100%;
 }
 
-.menos,
-.mais {
+#menos,
+#mais {
     background-color: transparent;
     border: 0;
     max-width: 35px;
@@ -72,22 +70,24 @@ td {
     cursor: pointer;
 }
 
-.teste {
+#teste {
     display: none;
 }
 
-.mais:hover,
-.menos:hover {
+#mais:hover,
+#menos:hover {
     background-color: rgb(122, 122, 122);
 }
 
-.menos>img,
-.mais>img,
-.delete>img {
+#menos>img,
+#mais>img,
+#delete>img {
     width: 100%;
 }
 
-.delete {
+
+
+#delete {
     background-color: transparent;
     border: 0;
     padding: 10px;
@@ -99,7 +99,7 @@ td {
     cursor: pointer;
 }
 
-.delete:hover {
+#delete:hover {
     background-color: rgb(122, 122, 122);
 }
 
@@ -107,7 +107,8 @@ td {
     table {
         width: auto;
     }
-    .teste {
+
+    #teste {
         display: inline-block;
     }
 }
