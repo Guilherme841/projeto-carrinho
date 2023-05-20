@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #303030;
+    padding: 30px;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    width: 100%;
+    background-color: #424242;
+    border-collapse: collapse;
+    color: white;
+}
+
+th {
+    font-size: 1.2em;
+    padding: 20px;
+    border: 1px solid rgb(126, 126, 126);
+    text-align: left;
+}
+
+td {
+    padding: 20px;
+    display: flex;
+    outline: 1px solid rgb(126, 126, 126);
+}
+
+#containerQuantidadeDelete {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#containerNomePreço {
+    width: 100%;
+    font-size: 1.3em;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+#containerNomePreço>p:nth-child(1) {
+    padding-bottom: 15px;
+}
+
+#imagem {
+    width: 120px;
+    height: 120px;
+}
+
+#imagem>img {
+    width: 100%;
+}
+
+#menos,
+#mais {
+    background-color: transparent;
+    border: 0;
+    max-width: 35px;
+    max-height: 35px;
+    padding: 7px;
+    transition: .8s;
+    cursor: pointer;
+}
+
+#preço, #qntd, #thVazio {
+    display: none;
+}
+
+#mais:hover,
+#menos:hover {
+    background-color: rgb(122, 122, 122);
+}
+
+#menos>img,
+#mais>img,
+#delete>img {
+    width: 100%;
+}
+
+#delete {
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    border-radius: 50%;
+    max-width: 55px;
+    max-height: 55px;
+    transition: .7s;
+    cursor: pointer;
+}
+
+#delete:hover {
+    background-color: rgb(122, 122, 122);
+}
+
+.teste {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    td {
+        padding: 20px;
+        display: table-cell;
+        outline: 1px solid rgb(126, 126, 126);
+    }
+
+    table {
+        width: auto;
+    }
+
+    #preço, #qntd, #thVazio {
+        display: block;
+    }
+    .teste {
+        display: block;
+    }
+    
+}
+
+/* 
+
+
+td,th {
+    padding: 5px 0px 0px 40px;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+th:nth-child(1) {
+    text-align: left;
+}
+
+tr {
+   
+}
+
+td {
+    text-align: center;
+    padding: 20px;
+}
+
+th {
+    text-align: center;
+    border-bottom: 1px solid whitesmoke;
+    font-size: 1.5em;
+}
+
+.containerProdutos2 {
+    display: flex;
+    align-items: center;
+}
+
+.containerQuantidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantidade {
+    margin: 0px 10px;
+    font-size: 1.3em;
+}
+
+.imagem {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.imagem > img {
+    width: 100%;
+}
+
+.legenda {
+    padding-left: 30px;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .containerProdutos2 {
+        display: block;
+    }
+    th:nth-child(2), th:nth-child(3) {
+        display: none;
+    }
+    tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+} */
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="tabela">
+        <tbody>
+            <th>Produto</th>
+            <th id="preço">Preço</th>
+            <th>Teste</th>
+            <tr id="tr">
+                <td id="td">
+                    <div id="containerImagemNome">
+                        <div id="imagem"><img src="imagens/bone.jpg"></div>
+                        <div id="containerQuantidadeDelete"><button id="menos"><img src="imagens/menos.png"></button><span
+                                id="quantidade">1</span><button id="mais"><img src="imagens/mais.png"></button><button
+                                id="delete"><img src="imagens/delete.png"></button></div>
+                    </div>
+                    <div id="containerNomePreço">
+                        <p>Boné</p>
+                        <p id="paragrafoPreço">preço: 31,90</p>
+                    </div>
+                </td>
+                <td class="teste">Preço</td>
+                <td>Teste</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <table>
+        <th>Produto</th>
+        <th>preço</th>
+        <th id="teste">teste</th>
+        <th id="teste">teste</th>
+        <tr id="tr">
+            <td>
+                <div id="containerImagemNome">
+                    <div id="imagem">
+                        <img src="imagens/bone.jpg" alt="bone">
+                    </div>
+                    <div id="containerQuantidadeDelete">
+                        <button id="menos"><img src="imagens/menos.png" alt="menos"></button>
+                        <span id="quantidade">1</span><button id="mais"><img src="imagens/mais.png"
+                                alt="mais"></button><button id="delete"><img src="imagens/delete.png" alt="delete"></button>
+                    </div>
+                </div>
+                <div id="containerNomePreço">
+                    <p>Boné</p>
+        
+                </div>
+            </td>
+           
+        </tr>
+        <tr>
+            <td>
+                <td>
+                    <p>preço: 31,90</p>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <th>Teste1</th>
+        <th>teste2</th>
+       <tr>
+        <td>Teste1</td>
+        <td>teste2</td>
+       </tr>
+    </table> -->
+</body>
+
+</html>
