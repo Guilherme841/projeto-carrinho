@@ -149,7 +149,7 @@ divContainerNomePreçoSeleçao.appendChild(paragrafo);
 
 let paragrafo2 = document.createElement("p");
 paragrafo2.setAttribute("id", "paragrafoPreço");
-paragrafo2.textContent = "preço: 31,90";
+paragrafo2.innerHTML = "preço: 31,90";
 divContainerNomePreçoSeleçao.appendChild(paragrafo2);
 
 function aplicarMedia() {
@@ -164,15 +164,6 @@ function aplicarMedia() {
 
     divDelete.style.display = "none";
     tdElemento4.innerHTML = divDelete.innerHTML;
-
-    const tdsSeleçao = document.getElementsByClassName("tds");
-
-    for (let elemento of tdsSeleçao) {
-      let containerTds = document.createElement("div");
-      containerTds.setAttribute("class", "containerTds");
-      elemento.appendChild(containerTds);
-
-    }
 
   } else {
 
