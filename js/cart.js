@@ -153,6 +153,7 @@ paragrafo2.textContent = "preço: 31,90";
 divContainerNomePreçoSeleçao.appendChild(paragrafo2);
 
 function aplicarMedia() {
+
   if (window.matchMedia("(min-width: 768px)").matches) {
     paragrafo2.style.display = "none";
     const paragrafo2Seleçao = document.getElementById("paragrafoPreço");
@@ -163,8 +164,18 @@ function aplicarMedia() {
 
     divDelete.style.display = "none";
     tdElemento4.innerHTML = divDelete.innerHTML;
+
+    const tdsSeleçao = document.getElementsByClassName("tds");
+
+    for (let elemento of tdsSeleçao) {
+      let containerTds = document.createElement("div");
+      containerTds.setAttribute("class", "containerTds");
+      elemento.appendChild(containerTds);
+
+    }
+
   } else {
-    
+
     paragrafo2.style.display = "block";
     divContainerQuantidadeDeleteSeleçao.style.display = "block";
     divDelete.style.display = "block";
