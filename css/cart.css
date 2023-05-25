@@ -7,203 +7,69 @@
 
 main {
     background-color: #303030;
-    padding: 30px;
     height: 100vh;
+    padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 table {
-    background-color: #424242;
-    color: white;
+    color: whitesmoke;
     border-collapse: collapse;
+    background-color: #3d3d3d;
 }
 
 th {
-    font-size: 1.2em;
+    color: whitesmoke;
+    font-size: 1.5em;
     padding: 20px;
-    text-align: left;
-    border: 1px solid rgb(126, 126, 126);
+    border: 1px solid rgb(120, 120, 120);
 }
 
 td {
+    border: 1px solid rgb(120, 120, 120);
     padding: 20px;
-    display: flex;
-    border:  1px solid rgb(126, 126, 126);
 }
 
-#containerQuantidadeDelete {
+.thHead1 {
+    text-align: left;
+}
+
+.tdBody1 {
+    display: flex;
+    font-size: 1.5em;
+}
+
+.nomeProduto, .preçoProduto {
+    padding: 10px 0px 0px 30px;
+}
+
+button {
+    width: 35px;
+    padding: 5px;
+    border: 0;
+    background-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.205);
+}
+
+.containerBotoes {
     display: flex;
     align-items: center;
-    padding-top: 10px;
+    justify-content: center;
+    padding: 25px 0px 0px 0px;
 }
 
-#containerNomePreço {
-    width: 100%;
-    font-size: 1.3em;
-    padding: 10px 30px;
-    text-align: center;
-}
-
-#containerNomePreço>p:nth-child(1) {
-    padding-bottom: 15px;
-}
-
-#imagem {
+.containerImg > img {
+    display: block;
+    margin: auto;
     width: 120px;
     height: 120px;
 }
 
-#imagem>img {
+button > img {
     width: 100%;
 }
-
-#menos,
-#mais {
-    background-color: transparent;
-    border: 0;
-    max-width: 35px;
-    max-height: 35px;
-    padding: 7px;
-    transition: .8s;
-    cursor: pointer;
-}
-
-#preço, #qntd, #thVazio {
-    display: none;
-}
-
-#mais:hover,
-#menos:hover {
-    background-color: rgb(122, 122, 122);
-}
-
-#menos>img,
-#mais>img,
-#delete>img {
-    width: 100%;
-}
-
-#delete {
-    background-color: transparent;
-    border: 0;
-    padding: 10px;
-    outline: 0;
-    border-radius: 50%;
-    max-width: 55px;
-    max-height: 55px;
-    transition: .7s;
-    cursor: pointer;
-}
-
-#delete:hover {
-    background-color: rgb(122, 122, 122);
-}
-
-.tds {
-    display: none;
-}
-
-@media screen and (min-width: 768px) {
-
-    td {
-        padding: 20px;
-        display: table-cell;
-    }
-    
-    #td {
-        columns: 2;
-    }
-
-    #containerNomePreço {
-        padding: 0;
-    }
-
-    #preço, #qntd, #thVazio {
-        display: table-cell;
-    }
-    .tds {
-        display: table-cell;
-    }
-
-    .containerTds {
-        padding: 20px;
-        display: flex;
-        align-items: center;
-    }
-    
-}
-
-/* 
-
-
-td,th {
-    padding: 5px 0px 0px 40px;
-    padding: 10px 40px;
-    text-align: center;
-}
-
-th:nth-child(1) {
-    text-align: left;
-}
-
-tr {
-   
-}
-
-td {
-    text-align: center;
-    padding: 20px;
-}
-
-th {
-    text-align: center;
-    border-bottom: 1px solid whitesmoke;
-    font-size: 1.5em;
-}
-
-.containerProdutos2 {
-    display: flex;
-    align-items: center;
-}
-
-.containerQuantidade {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.quantidade {
-    margin: 0px 10px;
-    font-size: 1.3em;
-}
-
-.imagem {
-    max-width: 100px;
-    max-height: 100px;
-}
-
-.imagem > img {
-    width: 100%;
-}
-
-.legenda {
-    padding-left: 30px;
-    color: white;
-}
-
-@media screen and (max-width: 700px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    .containerProdutos2 {
-        display: block;
-    }
-    th:nth-child(2), th:nth-child(3) {
-        display: none;
-    }
-    tr {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-} */

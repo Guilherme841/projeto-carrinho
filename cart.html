@@ -14,18 +14,42 @@
 
     </header>
     <main>
-        <div id="containerTabela">
-            <table id="tabela">
-                
+        <div id="containerTabela" class="containerTabela">
+            <table id="table" class="table">
+                <thead id="tHead" class="tHead">
+                    <tr id="trHead" class="trHead">
+                        <th id="thHead1" class="thHead1">Produto</th>
+                    </tr>
+                </thead>
+                <tbody id="tBody" class="tBody">
+                    <tr id="trBody" class="trBody">
+                        <td id="tdBody1" class="tdBody1">
+                            <div id="containerImg" class="containerImg">
+                                <img src="imagens/bone.jpg" alt="Boné">
+                                <div id="containerBotoes" class="containerBotoes">
+                                    <button>
+                                        <img src="imagens/menos.png" alt="Menos">
+                                    </button>
+                                    <span id="spanQntd" class="spanQntd">
+                                        1
+                                    </span>
+                                    <button>
+                                        <img src="imagens/mais.png" alt="Mais">
+                                    </button>
+                                    <button>
+                                        <img src="imagens/delete.png" alt="Delete">
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="containerNomePreço" class="containerNomePreço">
+                                <div id="nomeProduto" class="nomeProduto">Boné</div>
+                                <div id="preçoProduto" class="preçoProduto">Total: 27,99</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
-        <!-- <div class="containerProdutos">
-            <div class="imagem"><img src="imagens/caneca.jpg" alt="caneca"></div>
-            <div class="legenda">
-                <p class="nome">Caneca</p>
-                <p class="preço">Preço: R$ 31,90</p>
-            </div>
-        </div> -->
     </main>
     <footer>
 
