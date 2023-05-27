@@ -7,12 +7,18 @@
 
 main {
     background-color: #303030;
-    height: 100vh;
+    /* height: 100vh; */
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#containerTabela {
+    max-width: 900px;
+    border-bottom: 1px solid rgb(120,120,120);
+}
+
 table {
+    width: 100%;
     color: whitesmoke;
     border-collapse: collapse;
     background-color: #3d3d3d;
@@ -26,17 +32,21 @@ th {
     color: whitesmoke;
     font-size: 1.5em;
     padding: 20px;
-    border: 1px solid rgb(120, 120, 120);
+    border-bottom: 1px solid rgb(120, 120, 120);
 }
 
 td {
-    border: 1px solid rgb(120, 120, 120);
+    /* border-bottom: 1px solid rgb(120, 120, 120); */
     padding: 20px;
 }
 
 .tdBody1 {
     display: flex;
     font-size: 1.5em;
+}
+
+#tdBody2, #tdBody3, #tdBody4 {
+    text-align: center;
 }
 
 button {
@@ -77,6 +87,7 @@ button > img {
 #containerButton {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .sumirPc {
