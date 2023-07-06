@@ -15,7 +15,7 @@ for (let elemento of adicionarProduto) {
     let nomeElemento = pai2.querySelector(".nome");
     let preçoElemento = pai2.querySelector(".preço");
 
-    console.log(imagemElementoSrc);
+    console.log(imagemElemento);
     console.log(preçoElemento);
     console.log(nomeElemento);
 
